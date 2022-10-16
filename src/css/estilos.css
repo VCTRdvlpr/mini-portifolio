@@ -1,0 +1,146 @@
+body{
+    background-image: url(../imagens/umbrella-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+
+    }   
+
+.cartao{
+    background-color: rgb(12, 11, 11);
+    width: 370px;    
+    border: 4px solid #5c0101;
+    border-radius: 20px;
+    overflow: hidden;
+    }
+
+
+.cartao .minhas-informacoes{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartao .minhas-informacoes img{
+    width: 120px;
+    height: 140px;
+    border: 4px solid #5c0101;
+    border-radius: 50px;
+}
+
+.cartao .minhas-informacoes .stars{
+    font-size: 40px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    }
+
+.cartao .minhas-informacoes .nome{
+    font-size: 29px;
+    margin-top: 10px;
+    color: gray;
+}
+
+.cartao .minhas-informacoes .idade{
+    font-size: 20px;
+    color: grey;
+}
+
+.cartao .minhas-informacoes .cargo{
+    font-size: 20px;
+    color: grey;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+
+.cartao .conteudo .abas{
+    display:flex
+}
+
+.cartao .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    cursor:pointer;
+    transition: background-color 0.35s ease-in-out;
+}
+
+.cartao .abas img{
+    width: 30px;
+}
+
+.cartao .abas .aba.selecionado{
+    background-color: rgb(32, 32, 32);
+}
+
+.cartao .informacoes-abas{
+    background-color:rgb(32, 32, 32);
+}
+
+.cartao .abas .aba:hover{
+    background-color: rgb(65, 65, 65);;
+}
+
+.informacoes-abas .informacao{
+    min-height: 260px;
+    padding: 10px;
+    display: none;   
+}
+
+.informacoes-abas .informacao.selecionado{
+    display: block;
+}
+
+.informacoes-abas .sub-titulo{
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.informacoes-abas .descricao{
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.informacoes-abas .descricao span{
+    color: #d10505;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    max-height: 180px;
+    overflow: auto;
+}
+
+.redes-sociais li a{
+    color: white;
+    background-color: #5c0101;
+    width: 250px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid;
+    font-size: 20px;
+    transition: opacity 0.35s ease-in-out ;
+    }
+ 
+.redes-sociais li a:hover{
+    opacity: 0.6;
+}
+
